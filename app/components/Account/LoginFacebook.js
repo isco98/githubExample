@@ -32,7 +32,7 @@ export default function LoginFacebook() {
   }
   return (
     <SocialIcon
-      title="Iniciar sesion CON facebook"
+      title="Iniciar sesion con facebook"
       button
       type="facebook"
       onPress={logIn}
