@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { SocialIcon } from "react-native-elements";
-
 import * as Facebook from "expo-facebook";
 import * as firebase from "firebase";
 import { FacebookApi } from "../../utils/Social";
@@ -33,7 +32,7 @@ export default function LoginFacebook() {
   }
   return (
     <SocialIcon
-      title="Iniciar sesion con facebook"
+      title="Iniciar sesion CON facebook"
       button
       type="facebook"
       onPress={logIn}
