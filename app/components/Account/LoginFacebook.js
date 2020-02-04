@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { SocialIcon } from "react-native-elements";
-import Login from "../../screens/Account/Login";
+
 import * as Facebook from "expo-facebook";
 import * as firebase from "firebase";
 import { FacebookApi } from "../../utils/Social";
@@ -16,7 +16,7 @@ export default function LoginFacebook() {
         permissions,
         declinedPermissions
       } = await Facebook.logInWithReadPermissionsAsync({
-        permissions: ["Public_profile"]
+        permissions: ["public_profile"]
       });
       if (type === "success") {
         // Get the user's name using Facebook's Graph API
